@@ -1,0 +1,328 @@
+#div-box{
+    width: 2160px;
+    margin: 0 auto;
+}
+.div-top{
+    width: 2160px;
+    margin: 0 auto;
+    height: 65px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    position: relative;
+}
+.div-top-left{
+    width: 25%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+.img-top-left-logo{
+    height: 80%;
+    position: relative;
+    margin-left: 60%;
+    top: 5%;
+}
+.div-top-mid{
+    width: 40%;
+    height: 60px;
+    float: left;
+}
+.div-top-mid-a{
+    width: 10%;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+.a-top-mid{
+    width: 15%;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+}
+.text-top-mid{
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+    line-height: 55px;
+}
+.div-top-right{
+    width: 25%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+.div-top-right-a{
+    width: 50%;
+    height: 60px;
+    float: left;
+}
+.div-top-right-b{
+    width: 50%;
+    height: 60px;
+    float: left;
+}
+.text-top-right{
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 62px;
+}
+.div-top-right-air{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 40%;
+    top: 100px;
+    box-shadow: 2px 2px 4px rgb(204, 204, 204);
+    background-image: url(../image/air-bg1.jpg);
+    background-size: 100%;
+    border: solid 1px rgb(170, 170, 170);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+}
+.title-top-right-air{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+}
+.close-top-right-air{
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    float: right;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.div-top-right-air-button{
+    width: 100px;
+    height: 30px;
+}
+.button-top-right-air{
+    width: 60px;
+    height: 30px;
+}
+.div-top-right-table-a{
+    width: 100px;
+    height: 80px;
+}
+.div-top-right-table-b{
+    width: 300px;
+    height: 80px;
+}
+.button-top-right-air{
+    width: 100px;
+    height: 30px;
+    margin-left: 150px;
+}
+.div-top-end{
+    width: 10%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+
+
+/*banner容器*/
+.div-company-banner-box{
+    padding: 30px 20px 20px 0px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    margin-botoom:10px;
+    float: left;
+}
+
+
+.fl {
+    float: left;
+    display: inline;
+    position: relative;
+
+}
+
+.div-company-banner{
+    overflow: hidden;
+    padding: 30px 20px 20px 270px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 750px;
+    margin-left: -30px;
+}
+
+.company-banner-logo-box{
+    width:190px;
+    height: 130px;
+    float: left;
+    margin-right:20px;
+    position: relative;
+}
+
+.company-banner-logo-link,.company-banner-logo{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.company-v{
+    position: absolute;
+    top: 105px;
+    left:130px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 50%;
+    font-style: italic;
+
+}
+
+.company-banner-name{
+    font-size: 36px;
+    color: #000;
+    font-weight: bold;
+    text-decoration:none;
+
+
+}
+
+.company-banner-topic{
+    margin-left: -20px;
+}
+
+.company-banner-title{
+    display: inline-block;
+}
+#companyH1{
+    margin-top: 0px;
+}
+
+.company-banner-follow-btn {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 36px;
+    min-width: 86px;
+    margin-left: 10px;
+    margin-top: -22px;
+    border-radius: 10%;
+    color: #ffffff;
+    background: dodgerblue;
+}
+
+.company-banner-content{
+    font-size: 25px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 695px;
+    margin-left: -20px;
+    margin-top: 5px ;
+}
+
+.nav-tab-box{
+    width: 830px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: 300px;
+}
+
+.banner-nav-box {
+    width: 1000px;
+    height: 60px;
+    margin: 0 0 0 60px;
+
+
+}
+
+.banner-nav-tab{
+    float: left;
+    text-align: center;
+    color: #000;
+    width: 90px;
+    height: 60px;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration:none;
+    left:-100px;
+}
+
+.banner-nav-slash{
+    color:#999;
+}
+
+.banner-nav-item{
+    font-size: 18px;
+    color:#000;
+}
+
+#main{
+    padding: 15px 10px;
+    float: left;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#main-left{
+    margin-left: 270px;
+    background: white;
+
+}
+
+
+#wrapper,#wrapper img{
+    height: 500px;
+    width: 398px;
+    background: url("../image/picture-index.png");
+    background-size:100% ;
+    float: left;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+}
+
+#picture {
+    height: 70px;
+    margin-top: 10px;
+    position: relative;
+    top: 310px;
+    left: -418px;
+
+
+}
+
+#picture div img{
+    width: 126px;
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+
+#picture div:last-child{
+    margin: 0;
+}
+/*公司简介*/
+.company_intro{
+    position: absolute;
+    top: 387px;
+    left: 700px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/*公司详情*/
+#d2{
+    width:600px;
+
+    color: #000;
+    margin:20px 20px 20px 20px ;
+
+    font-size: 16px;
+    overflow: hidden;
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/page.css" >
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+    <div id="box">
+          <div class="div-top">
+            <div class="div-top-left">
+                <a href="./ZYJ.html">
+                    <img class="img-top-left-logo" src="../image/Logo.png">
+                </a>
+            </div>
+            <div class="div-top-mid">
+                <div class="div-top-mid-a">
+                    <a href="" target="_blank" class="a-top-mid">
+                        <label class="text-top-mid">公司</label>
+                    </a>
+                </div>
+                <div class="div-top-mid-a">
+                    <a href="" target="_blank" class="a-top-mid">
+                        <label class="text-top-mid">工作</label>
+                    </a>
+                </div>
+                <div class="div-top-mid-a">
+                    <a href="" target="_blank" class="a-top-mid">
+                        <label class="text-top-mid">工资</label>
+                    </a>
+                </div>
+            </div>
+            <div class="div-top-right">
+                <div class="div-top-right-a">
+                    <a href="" class="text-top-right">个人简历</a>
+                </div>
+                <div class="div-top-right-b">
+                    <a href="javascript:;" class="text-top-right" value="注册登录" onclick='openAir();'>注册/登录</a>
+                    <div id="pageCover"></div>
+                    <div id="air" class="div-top-right-air">
+                        <span class="close-top-right-air">×</span>
+                        <div class="title-top-right-air">登录/注册</div>
+                        <div id="div1" style="display:block">
+                            <div class="div-top-right-air-button">
+                            <button type="button" id="showHidden" class="button-top-right-air">已有账号,登录</button>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>用户名:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="text" placeholder="用户名只能以英文和数字组成" maxlength="15">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>密码:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="password" placeholder="密码长度不能超过15" maxlength="15" id="pw1">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>再次输入密码:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="password" placeholder="密码长度不能超过15" maxlength="15" id="pw2" onkeyup="validate()">
+                                            <span id="hint"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                    <script>
+                                        function validate() {
+                                            var pw1 = document.getElementById("pw1").value;
+                                            var pw2 = document.getElementById("pw2").value;
+                                            if(pw1 == pw2) {
+                                            document.getElementById("hint").innerHTML="<font color='green'>两次密码相同</font>";
+                                            }
+                                            else {
+                                            document.getElementById("hint").innerHTML="<font color='red'>两次密码不相同</font>";
+                                            }
+                                            }
+                                    </script>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>姓名:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="text" placeholder="姓名必须与简历中姓名匹配">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>手机号码:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="number" placeholder="请输入11位数字" maxlength="11">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>邮箱地址:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="text">
+                                            <b style="font-size: 120%">@</b>
+                                            <select>
+                                                <option>163.com</option>
+                                                <option>126.com</option>
+                                                <option>qq.com</option>
+                                                <option>gmail.com</option>
+                                                <option>yahoo.com</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="button-top-right-air">提交</button>
+                        </div>
+                        <div id="div2" style="display:none">
+                            <div class="div-top-right-air-button">
+                            <button type="button" id="showDisplay">未有帐号,注册</button>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>用户名:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="text" placeholder="请输入用户名" maxlength="15">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="div-top-right-table-a">
+                                            <b>密码:</b>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="div-top-right-table-b">
+                                            <input type="password" placeholder="请输入密码" maxlength="15">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="button-top-right-air">登录</button>
+                        </div>
+                            <script type='text/javascript'>
+                                    function show_hidden(obj) {
+                                    　　if(obj.style.display == 'block') {
+                                    　　 obj.style.display = 'none';
+                                    　　} else {
+                                    　　　　　obj.style.display = 'block';
+                                    　　}
+                                    }
+                                    var sh = document.getElementById("showHidden");
+                                    sh.onclick = function() {
+                                        var div1 = document.getElementById("div1");
+                                        var div2 = document.getElementById("div2");
+                                        show_hidden(div1);
+                                        show_hidden(div2);
+                                        return false;
+                                    }
+                                    var sd = document.getElementById("showDisplay");
+                                    sd.onclick = function() {
+                                        var div1 = document.getElementById("div1");
+                                        var div2 = document.getElementById("div2");
+                                        show_hidden(div1);
+                                        show_hidden(div2);
+                                        return false;
+                                    }
+                            </script>
+                            <script type="text/javascript">
+                                    function EventTarget(){
+                                        this.handlers = {};
+                                    }
+                                    EventTarget.prototype = {
+                                        constructor:EventTarget,
+                                        addHandler:function(type,handler){
+                                            if(typeof this.handlers[type] == 'undefined'){
+                                                this.handlers[type] = new Array();
+                                            }
+                                            this.handlers[type].push(handler);
+                                        },
+                                        removeHandler:function(type,handler){
+                                            if(this.handlers[type] instanceof Array){
+                                                var handlers = this.handlers[type];
+                                                for(var i = 0,len = handlers.length;i<len;i++){
+                                                    if(handler[i] == handler){
+                                                        handlers.splice(i,1);
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        trigger:function(event){
+                                            if(!event.target){
+                                                event.target = this;
+                                            }
+                                            if(this.handlers[event.type] instanceof Array){
+                                                var handlers = this.handlers[event.type];
+                                                for(var i = 0,len = handlers.length;i<len;i++){
+                                                    handlers[i](event);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    function extend(subType,superType){
+                                        var prototype = Object(superType.prototype);
+                                        prototype.constructor = subType;
+                                        subType.prototype = prototype;
+                                    }
+
+                                    function Air(id){
+                                        EventTarget.call(this)
+                                        this.id = id;
+                                        var that = this;
+                                        document.getElementById(id).children[0].onclick = function(){
+                                            that.close();
+                                        }
+                                    }
+                                    extend(Air,EventTarget);
+
+                                    Air.prototype.show=function(){
+                                        var dlg = document.getElementById(this.id);
+                                        dlg.style.display = 'block';
+                                        dlg = null;
+                                        this.trigger({type:'open'});
+                                    }
+                                    Air.prototype.close=function(){
+                                        var dlg = document.getElementById(this.id);
+                                        dlg.style.display = 'none';
+                                        dlg = null;
+                                        this.trigger({type:'close'});
+                                    }
+                                    function openAir(){
+                                        var dlg = new Air('air');
+                                        dlg.addHandler('close',function(){
+                                            document.getElementById('pageCover').style.display = 'none';
+                                        });
+                                        dlg.addHandler('open',function(){
+                                            document.getElementById('pageCover').style.display = 'block';
+                                        });
+                                        dlg.show();
+                                    }
+                            </script>
+                    </div>
+                </div>
+            </div>
+            <div class="div-top-end">
+                <em></em>
+            </div>
+        </div>
+
+<!--        banner-->
+         <div class="div-company-banner-box">
+             <div class="div-company-banner">
+             <div class="cfix">
+                 <div class="fl">
+                     <div class="company-banner-logo-box">
+                         <!-- 公司banner图-->
+                         <a class="company-banner-logo-link" href="https://www.jobui.com/job/185965148/">
+                             <img class="company-banner-logo" src="../image/company-banner-logo.png" alt="北京字节跳动科技有限公司">
+                         </a>
+                          <!-- V标签-->
+                         <em class="company-v" src="">V</em>
+                     </div>
+                 </div>
+            </div>
+                 <div class="fl">
+                     <div class="company-banner-topic">
+                         <!-- 公司名字，标题-->
+                         <h1 id="companyH1" class="company-banner-title" >
+                             <a  href="https://www.jobui.com/company/10375749/" class="company-banner-name">字节跳动</a>
+                         </h1>
+                         <div style="display: inline-block;vertical-align:middle;">
+                            <button class="company-banner-follow-btn">+ 关注</button>
+                         </div>
+                     </div>
+                     <div class="company-banner-intro">
+                         <p class="company-banner-content">国内移动互联网领域成长最快的产品服务之一</p>
+                     </div>
+                     </div>
+                </div>
+                 <!-- 导航-->
+                <div id="navTab" class="nav-tab-box">
+                    <div class="banner-nav-box">
+                        <a href="https://www.jobui.com/company/10375749/" title="北京字节跳动科技有限公司介绍" class="banner-nav-tab selected">
+                            <div class="banner-nav-slash">///</div>
+                            <div class="banner-nav-item">概况</div>
+                        </a>
+                        <a href="https://www.jobui.com/company/10375749/jobs/" title="北京字节跳动科技有限公司招聘信息" class="banner-nav-tab selected">
+                                <div class="banner-nav-slash">
+                                    10265&nbsp;个
+                                </div>
+                            <div class="banner-nav-item">招聘</div>
+                        </a>
+                        <a href="https://www.jobui.com/company/10375749/jobs/yingjiesheng/" title="北京字节跳动科技有限公司应届生招聘" class="banner-nav-tab ">
+                            <div class="banner-nav-slash">111&nbsp;个</div>
+                            <div class="banner-nav-item">应届</div>
+                        </a>
+                        <a href="https://www.jobui.com/company/10375749/salary/" title="北京字节跳动科技有限公司工资待遇" class="banner-nav-tab ">
+                            <div class="banner-nav-slash">58034&nbsp;条</div>
+                            <div class="banner-nav-item">薪酬</div>
+                        </a>
+                        <a href="https://www.jobui.com/company/10375749/photos/" title="北京字节跳动科技有限公司环境照片" class="banner-nav-tab ">
+                            <div class="banner-nav-slash">11&nbsp;张</div>
+                            <div class="banner-nav-item">照片</div>
+                        </a>
+
+                        <a href="https://www.jobui.com/company/10375749/products/" title="北京字节跳动科技有限公司产品与服务" class="banner-nav-tab ">
+                            <div class="banner-nav-slash">26&nbsp;个</div>
+                            <div class="banner-nav-item">产品</div>
+                        </a>
+                         <a href="/company/10375749/review/" title="北京字节跳动科技有限公司怎么样" class="banner-nav-tab ">
+                             <div class="banner-nav-slash">7&nbsp;条</div>
+                            <div class="banner-nav-item">评论</div>
+                          </a>
+                         <a href="/company/10375749/news/" title="北京字节跳动科技有限公司新闻" class="banner-nav-tab ">
+                             <div class="banner-nav-slash">105&nbsp;条</div>
+                              <div class="banner-nav-item">新闻</div>
+                         </a>
+                         <a href="/company/10375749/fans/" title="北京字节跳动科技有限公司粉丝" class="banner-nav-tab ">
+                             <div class="banner-nav-slash">265人</div>
+                            <div class="banner-nav-item">粉丝</div>
+                          </a>
+                         <a href="/company/10375749/financing/" title="北京字节跳动科技有限公司融资情况" class="banner-nav-tab ">
+                            <div class="banner-nav-slash">4次</div>
+                             <div class="banner-nav-item">融资</div>
+                         </a>
+
+
+
+            </div>
+                </div>
+             </div>
+
+
+
+        <div id="main">
+             <!-- 公司概况-->
+
+            <div id="main-left">
+                <!-- 横幅-->
+                <a href="javascript:void(0)" ››id="index-pic">
+
+                    <div id="wrapper"></div>
+
+                </a>
+                 <!--公司图片，横幅 -->
+
+                <!-- 公司图片 三张/-->
+               <div id="picture">
+
+                      <a href="javascript:void(0)">
+                  <div class="show1">
+                        <img src="../image/picture1.png">
+                    </div>
+                       </a>
+                     <a href="javascript:void(0)">
+                    <div class="show2">
+                        <img src="../image/picture2.png">
+                    </div>
+                     </a>
+                      <a href="javascript:void(0)">
+                    <div class="show3">
+                        <img src="../image/picture3.png">
+                    </div>
+                      </a>
+               </div>
+               <div class="company_intro">
+                    性质：<tr>民营公司 / 1000人以上</tr>
+                    <br>
+                    行业：<tr>互联网/电子商务</tr>
+                    <br>
+                    全程：<tr>北京字节跳动科技有限公司</tr>
+               </div>
+                <div id="d2">
+                   [Who We Are]
+我们是开发了 《今日头条》&《内涵段子》等应用的团队,2012年成立发展最快的移动互联网公司之一，是一个拥有丰富创业经历和成熟公司经验的靠谱团队，聚集了来自一流学校和公司的顶尖人才，有着全球科技、金融行业最顶级的投资人投资。
+
+我们立志用卓越的技术帮助用户发现有价值的信息。我们高效、简单、极致、务实。我们每月有数千万的用户通过我们的产品了解世界、启发思考、开怀一笑，并活跃地参与互动。
+
+我们的技术团队：
+人均承担近200万日启动次数的访问
+勇于采用新锐的算法和构架，既大量使用优秀开源系统又自研核心业务系统
+既学习经典和优秀的实践，又敢于做出自己的方案
+每个人都可参加从用户沟通、需求讨论、产品开发、到上线部署的环节
+办公室可自由访问全球优秀网站，英文资源
+
+[What we have]
+
+1、 我们成长快速，前景广阔，能给优秀的你更大的舞台。
+
+发布每日千万用户使用的产品，每天获得大量用户反馈
+参与亿级访问次数的实时个性化系统构架的迭代
+业界牛人的培训交流
+
+2、 优厚的短期长期回报和大幅上升的空间。
+
+我们提供媲美名企的薪资，外加股票期权
+同时提供健康叁餐，娱乐活动设施丰富，精彩building不间断。
+公司快速发展需要培养和激励脱颖而出的骨干成员
+
+3、 我们倡导精英团队，摒除大公司的冗杂人事，始终保持快速沟通的做事方式。
+
+每个方向保持很小的团队，保持干练
+扁平，没有通货膨胀的title，没有客套的称呼
+                </div>
+            </div>
+
+
+
+            <div class="main-right"></div>
+
+        </div>
+
+
+
+
+
+        <div class="div-bottom">
+            <em></em>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
